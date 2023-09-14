@@ -1,0 +1,10 @@
+[Unit]
+Description=Fixes WSL time drift
+Wants=wsltimefixer.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/hwclock --hctosys
+
+[Install]
+WantedBy=multi-user.target
