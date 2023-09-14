@@ -1,1 +1,19 @@
-# wsltimefixer
+# WSL Time Drift Fixer
+
+This is a simple guide to add new systemd service that fixes time drift in WSL.
+
+## Prerequisites
+
+- A Linux distribution compatible with systemd installed in WSL2
+- `systemd` enabled in /etc/wsl.conf
+```
+[boot]
+systemd=true
+```
+## Instalation
+ - Clone repository
+ - run as script as root
+ ```
+ ./install.sh 
+ ```
+ - Enjoy
