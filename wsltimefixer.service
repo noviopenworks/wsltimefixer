@@ -4,7 +4,7 @@ Wants=wsltimefixer.timer
 
 [Service]
 Type=oneshot
-ExecStart=/usr/sbin/hwclock --hctosys
+ExecStart=/usr/sbin/ntpdate  pool.ntp.org
 
 [Install]
 WantedBy=multi-user.target
