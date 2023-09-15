@@ -12,7 +12,7 @@ systemd=true
 ```
 ## Instalation
  - Clone repository
- - run as script as root
+ - run a script as root
  ```
  ./install.sh 
  ```
